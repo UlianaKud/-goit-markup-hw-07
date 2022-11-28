@@ -1,0 +1,11 @@
+@mixin alignment($positionAI: stretch, $positionJC: flex-start) {
+  display: flex;
+  align-items: $positionAI;
+  justify-content: $positionJC;
+}
+
+@mixin transition($property...) {
+    transition-property: $property;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
